@@ -53,4 +53,4 @@ git clone <website of the repo>
 git add .
 git commit -m "message of commit"
 git push 
-git commit -m "commit
+git commit -m "commit"
