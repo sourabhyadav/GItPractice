@@ -49,6 +49,8 @@ git remote add <webnickName> <URL of the github repo, ending with .git>
 // Pushing our changes to github remote 
 // Best practice is to create a "New Repo" from the github website
 // Then start making changes to it 
-git clone <website>
+git clone <website of the repo>
 git add .
+git commit -m "message of commit"
+git push 
 git commit -m "commit
