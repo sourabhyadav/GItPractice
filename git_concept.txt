@@ -1,0 +1,9 @@
+2nd file
+
+adding any file is a two step process:
+working copy ->  stagin area   ->    repository  ->   git server
+	     add	      commit		 push
+
+// Rolling for older version
+1st commit >> 2nd commit >> 3rd commit >> 2nd commit (this is roll back to prev version)
+// here in git we kind of never delete any commit rather we go in linear fasion
