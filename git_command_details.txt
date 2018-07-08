@@ -43,3 +43,12 @@ git checkout -- <filename> 		-> it does take the repo copy version make it as a 
 
 // Rolling back to previous commited versions
 git checkout <initials of commit number> -- <filename> -> this command will make the provided prev filename to your staging area . You need to review and edit it and them again commit
+
+// Adding & Pushing repo to the github server to make it public
+git remote add <webnickName> <URL of the github repo, ending with .git>
+// Pushing our changes to github remote 
+// Best practice is to create a "New Repo" from the github website
+// Then start making changes to it 
+git clone <website>
+git add .
+git commit -m "commit
