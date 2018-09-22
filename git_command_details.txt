@@ -65,3 +65,22 @@ git add .
 git commit -m "message of commit"
 git push 
 git commit -m "commit"
+
+// BRANCHING: Develop more features seperatly without touching master branch
+// default branch is "master"
+git branch <branch name> 	-> You can create new branch 
+git checkout <branch name> 	-> to switch between the branches
+git brach -v 	-> lists all the branches with * for working branch
+// whenever you can on the particular branch the .git will show only those stuff in your folder struct i.e. win explorer
+
+// MERGING
+// so whenever you create a branch comit or push changes to that particular new branch nothing much happens to the master ot other branches
+// To take your changes form your branch to say master branch you need to do merging
+git merge <branch name> 	-> this will merge the the given branch to current active branch
+// you need to add branch to the server if you want to push something from any particular branch
+git push -u <branch name>
+// you can push anything to a specific branch to the server
+// Once the merging is done you can delete the unwanted branches
+git branch -D <branch name>	-> this command will delete the branch locally not on the server
+// You need to explicitly delete the braches on the server 
+git push origin --delete <branch name>
