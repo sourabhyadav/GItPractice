@@ -1,12 +1,12 @@
 2nd file
 
-User 1: Git bash -> here user 1 can commit the changes personally
-User 2: Git bash -> here user 2 can commit the changes personally
+User 1: Local Repo/folder : Git bash -> here user 1 can commit the changes personally
+User 2: Local Repo/folder : Git bash -> here user 2 can commit the changes personally
 
 Git Server -> to collaborate between user 1 and user 2. This can be achieved by using git push and git pull command and git branch and merge stuff
 	- the server is nothing but github website which is protected by username and password for each user
 	
-
+-> You should always create the server Repo name and local Repo name same to same 
 
 adding any file is a two step process:
 working copy ->  stagin area   ->    repository  ->   git server

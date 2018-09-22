@@ -9,6 +9,14 @@ git --version			-> prints the version of your git
 git config user.name "<author name>" 	-> adds the user name for the given git repo
 git config user.email "<email id>" -> adds user email fot the given git repo
 git init 			-> initilize the empty repo of as git repo to track changes
+git remote add <webnickName> <URL of the github repo, ending with .git> -> This has to done once to link your local repo with server repo
+git push -u origin master 	-> this has to be done at least at very first push for any server repo
+	-> -u -> sets up the uplink
+	-> origin -> server repo head (github link)
+	-> master -> local repo head
+	-> This also creates a default brack on the github server called master
+	
+-> When you clone a repo from the server above command need not to be run because origin will be already set you you
 
 // Basic git utils
 git log				-> prints all the commit to the repo
@@ -17,7 +25,7 @@ git status 			->
 
 
 // Add a file to git repo and commut them
-git add . 						-> adds the all the new files inside the git repo
+git add <path/filename> or . 	-> . adds the all the new files inside the git repo
 git commit -m "your message" 	-> commit your changes
 
 
@@ -46,8 +54,9 @@ git checkout -- <filename> 		-> it does take the repo copy version make it as a 
 // Rolling back to previous commited versions
 git checkout <initials of commit number> -- <filename> -> this command will make the provided prev filename to your staging area . You need to review and edit it and them again commit
 
-// Adding & Pushing repo to the github server to make it public
+// Adding & Pushing repo to the github server to make it public (one time activity)
 git remote add <webnickName> <URL of the github repo, ending with .git>
+
 // Pushing our changes to github remote 
 // Best practice is to create a "New Repo" from the github website
 // Then start making changes to it 
