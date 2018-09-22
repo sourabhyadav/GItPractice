@@ -17,7 +17,7 @@ git status 			->
 
 
 // Add a file to git repo and commut them
-git add . 			-> adds the all the new files inside the git repo
+git add . 						-> adds the all the new files inside the git repo
 git commit -m "your message" 	-> commit your changes
 
 
