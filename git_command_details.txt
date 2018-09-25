@@ -9,7 +9,7 @@ git --version			-> prints the version of your git
 git config user.name "<author name>" 	-> adds the user name for the given git repo
 git config user.email "<email id>" -> adds user email fot the given git repo
 git init 			-> initilize the empty repo of as git repo to track changes
-git remote add <webnickName> <URL of the github repo, ending with .git> -> This has to done once to link your local repo with server repo
+git remote add origin <webnickName> <URL of the github repo, ending with .git> -> This has to done once to link your local repo with server repo
 git push -u origin master 	-> this has to be done at least at very first push for any server repo
 	-> -u -> sets up the uplink
 	-> origin -> server repo head (github link)
@@ -84,3 +84,17 @@ git push -u <branch name>
 git branch -D <branch name>	-> this command will delete the branch locally not on the server
 // You need to explicitly delete the braches on the server 
 git push origin --delete <branch name>
+
+// Updating your forked branch:
+You might get something like "You are X commits behind <Original Repo>"
+
+Following are the commands to keep your forked Repo updated:
+
+cd into/cloned/fork-repo
+git remote add upstream git://github.com/ORIGINAL-DEV-USERNAME/REPO-YOU-FORKED-FROM.git
+git fetch upstream
+
+git pull upstream master or  <branch name>
+git push origin master or  <branch name>
+
+Above commands will take all the changes form the sorce dir to your local copy
