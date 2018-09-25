@@ -15,3 +15,11 @@ working copy ->  stagin area   ->    repository  ->   git server
 // Rolling for older version
 1st commit >> 2nd commit >> 3rd commit >> 2nd commit (this is roll back to prev version)
 // here in git we kind of never delete any commit rather we go in linear fasion
+
+// Resetting the Head to some other commit in the history
+Lets say you have multiple commits in your local Repo. Now you want to roll back the any particular commit in past. You can use "git reset --soft <repo version>" to do this keeping other future changes in the staged state. You can check the same using "git status" command.
+So basically git reset --soft just resets the git head while keeping all the changes intact from the file.
+Precaution: Do this only when your changes are local not pushed yet.
+
+Once you have pushed your stuff on the server with multiple contributors working on it... then the best practice is never back in history... as other contributors will get affected by yout move.
+So even if you wanted some commits to be removed... you need to use "git revert <repo version>" which will undo the chages based on given repo version and a new commit on top of every thing
