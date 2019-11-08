@@ -4,6 +4,7 @@ Git is a useful tool for developers. Specialy when you wanted to work on a commo
 I made a concise explaination of most of the commands and in what situation it should be used during the life-cycle of the poject. 
 
 **One time activity:**
+
 These command are usefull when you start your workspace and repo for the git to track for.
 
 git --version				-> prints the version of your git
@@ -20,12 +21,14 @@ git push -u origin master 		-> this has to be done at least at very first push f
 **Note:** When you clone a repo from the server above command need not to be run because origin will be already set for you
 
 **Basic git utils:**
+
 git log					-> prints all the commit to the repo
 git log --author "<author name>" 	-> prints all the commit to the repo from a specific user only
 git status 				-> Prints the status of the current branch
 
 
 **Add a file to git repo and commut them:**
+
 git add <path/filename> or . 		-> . adds the all the new files inside the git repo
 git commit -m "your message" 		-> commit your changes
 	-> -m: is the message you wanted to give for this commit
@@ -34,34 +37,43 @@ git commit -m "your message" 		-> commit your changes
 
 
 **View the chages that you made**
+
 git diff 			-> shows the diff between the working file (the file which is not added yer) vs current repo file
 git diff --staged 		-> shows diff between the staged copy (file which are added but not yet commited) vs current repo file
 
 **How to delete a file** 
+
 git rm <file name>		-> it deletes the file BUT you need to commit to ask git to take the snapshot for these changes to capture
 
 **Note:** Git rename is simialr to detele and add a new file if you do it manually. Here you have to commit manually
 **OR**
+
 // use git mv command
 git mv <oldfilename> <newfilename? 	-> it directly does the renaming of files, later comit manually to take the snapshot
 
 **Commiting the changes directly to the repo**
+
 git commit -am "commit message"
 
 **Unsatging any file**
+
 git reset HEAD < staged filename> 	-> unsaging any file making it again working copy	
 
 **Rolling out for the older version of the any file**
+
 git checkout -- <filename> 			-> it does take the repo copy version make it as a working copy
 // above command is meant for working copy to replaced with repo copy
 
 **Rolling back to previous commited versions**
+
 git checkout <initials of commit number> -- <filename> 	-> this command will make the provided prev filename to your staging area . You need to review and edit it and them again commit
 
 **Adding & Pushing repo to the github server to make it public (one time activity)**
+
 git remote add <webnickName> <URL of the github repo, ending with .git>
 
 **Pushing our changes to github remote** 
+
 // Best practice is to create a "New Repo" from the github website
 // Then start making changes to it 
 git clone <website of the repo>
@@ -71,6 +83,7 @@ git push
 git commit -m "commit"
 
 **BRANCHING:**
+
 // Develop more features seperatly without touching master branch
 // default branch is "master"
 git branch <branch name> 		-> You can create new branch 
@@ -81,6 +94,7 @@ git branch -v 				-> lists all the branches with * for working branch
 // For more graphical details follow the (link)[1]:
 
 **MERGING**
+
 // so whenever you create a branch comit or push changes to that particular new branch nothing happens to the master ot other branches
 // To take your changes form your branch to say master branch you need to do merging
 
