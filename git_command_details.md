@@ -91,7 +91,7 @@ git checkout <branch name> 		-> to switch between the branches
 git branch -v 				-> lists all the branches with * for working branch
 // whenever you can on the particular branch the .git will show only those stuff in your folder struct i.e. win explorer
 // Here you can make commits based on the features you are developing on this current branch later you can merge these changes to your master branch then you can push to remote server
-// For more graphical details follow the (link)[1]:
+// For more graphical details follow the [link](1]):
 
 **MERGING**
 
